@@ -6,6 +6,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Cinzel Decorative';
+    src: url('../fonts/Cinzel_Decorative/CinzelDecorative-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*Globales*/
 
 * {
@@ -23,7 +30,7 @@ body{
     font-weight: 500;
 }
 
-/*Navegador*/
+/*Navegador inicio*/
 nav {
     padding: 15px;
 }
@@ -50,6 +57,11 @@ nav a:hover {
     color: #ff6b6b; 
 }
 
+/*Navegador normal*/
+.navNormal{
+    background-color: black;;
+}
+
 /*Banner*/
 
 .banner {
@@ -70,10 +82,11 @@ nav a:hover {
 
 .tituloInicio {
     position: absolute;
+    font-family: 'Cinzel Decorative';
     color: white;
     top: 120px;
-    left: 130px;
-    font-size: 64px;
+    left: 90px;
+    font-size: 46px;
     filter: drop-shadow(5px 5px 30px #a99f9f);
 }
 
@@ -127,4 +140,3 @@ button {
   button:active {
     transform: scale(0.9);
   }
-  
