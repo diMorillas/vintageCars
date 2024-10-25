@@ -1,0 +1,102 @@
+/*Globales*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+p{
+    font-family: 'Crimson Text';
+    margin-left: 2px;
+}
+
+
+/*Navegador*/
+nav {
+    width: 100%;
+    padding: 15px;
+    background-color: #333;
+    font-family: 'Crimson Text';
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+    padding: 15px 0;
+}
+
+nav li {
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff6b6b;
+}
+
+/* Formulario */
+
+.centrar-formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+    margin-top: 60px; 
+}
+
+
+.formulario-coche{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 650px;
+    height: 550px;
+}
+
+.formulario-coche h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    font-family: 'Cinzel Decorative';
+}
+
+.formulario-coche .input-campo {
+    font-family: 'Cinzel Decorative';
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.formulario-coche .boton-enviar {
+    font-family: 'Cinzel Decorative';
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.formulario-coche .boton-enviar:hover {
+    background-color: #45a049;
+}

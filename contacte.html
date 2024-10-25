@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Noir Classic Cars</title>
+    <link rel="stylesheet" href="./css/styleForm.css">
+    <link rel="icon" href="./images/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Navegador -->
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="./coches.html">Coches de segunda mano</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
+            <li><a href="contacte.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Inicio Formulario -->
+    <div class="centrar-formulario">
+        <form class="formulario-coche">
+            <h2>Registro de Coche</h2>
+            <p>Nombre</p>
+            <input type="text" class="input-campo" placeholder="Nombre" required>
+            <p>Apellido</p>
+            <input type="text" class="input-campo" placeholder="Apellido" required>
+            <p>Número de teléfono</p>
+            <input type="tel" class="input-campo" placeholder="Número de Teléfono" required>
+            <p>Correo electrónico</p>
+            <input type="email" class="input-campo" placeholder="Correo" required>
+            <p>Marca de coche:</p>
+            <select class="input-campo" required>
+                <option value="" disabled selected>---</option>
+                <option value="audi">Audi</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="bmw">BMW</option>
+                <option value="porsche">Porsche</option>
+            </select>
+            <p>Año del coche:</p>
+            <input type="number" class="input-campo" placeholder="Año del Coche" min="1960" max="2003" required>
+            
+            <button type="submit" class="boton-enviar">Enviar</button>
+        </form>
+    </div>
+    <!--Fin Formulario-->
+
+</body>
+</html>
