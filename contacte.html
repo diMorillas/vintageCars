@@ -13,13 +13,16 @@
     <!-- Navegador -->
     <nav>
         <ul>
-            <li><a href="#">Inicio</a></li>
+            <li><a href="./index.html">Inicio</a></li>
             <li><a href="./coches.html">Coches de segunda mano</a></li>
             <li><a href="#">Sobre Nosotros</a></li>
             <li><a href="contacte.html">Contacto</a></li>
         </ul>
     </nav>
+    <!--Fin Navegador-->
 
+    <h1>¡Bienvenido al formulario de contacto!</h1>
+    <h3>Rellena los siguientes campos:</h3>
     <!-- Inicio Formulario -->
     <div class="centrar-formulario">
         <form class="formulario-coche">
@@ -39,6 +42,13 @@
                 <option value="mercedes">Mercedes</option>
                 <option value="bmw">BMW</option>
                 <option value="porsche">Porsche</option>
+            </select>
+            <p>Servicio:</p>
+            <select class="input-campo" required>
+                <option value="" disabled selected>---</option>
+                <option value="reparar">Reparación</option>
+                <option value="modificar">Modificación</option>
+                <option value="comprar">Comprar</option>
             </select>
             <p>Año del coche:</p>
             <input type="number" class="input-campo" placeholder="Año del Coche" min="1960" max="2003" required>

@@ -1,12 +1,37 @@
+/*Fuentes de letra*/
+@font-face {
+    font-family: 'Crimson Text';
+    src: url('../fonts/Crimson_Text/CrimsonText-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cinzel Decorative';
+    src: url('../fonts/Cinzel_Decorative/CinzelDecorative-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*Globales*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Crimson Text';
 }
 
 body {
     background-color: #f0f0f0;
+}
+
+h1{
+    margin-top: 150px;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
 }
 
 p{
@@ -20,7 +45,6 @@ nav {
     width: 100%;
     padding: 15px;
     background-color: #333;
-    font-family: 'Crimson Text';
     position: fixed;
     top: 0;
     z-index: 10;
@@ -64,8 +88,9 @@ nav a:hover {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 300px;
     width: 650px;
-    height: 550px;
+    height: 700px;
 }
 
 .formulario-coche h2 {
