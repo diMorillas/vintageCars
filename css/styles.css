@@ -25,10 +25,17 @@ html,body{
     height: 100%;
 }
 
-body{
+body {
     font-family: 'Crimson Text';
     font-weight: 500;
+    cursor: url('../cursor/cursorW.svg#icon'), auto;
 }
+
+* {
+    cursor: url('data:image/svg+xml;utf8,<svg width="20" height="20" viewBox="0 0 20 20" fill="red" xmlns="http://www.w3.org/2000/svg"><path d="M6.63564 2.28753C5.98325 1.75037 5 2.21445 5 3.05952V17.0583C5 17.9844 6.15025 18.413 6.75622 17.7127L10.2799 13.6402C10.5648 13.3109 10.9788 13.1217 11.4142 13.1217L17.0061 13.1217C17.9444 13.1217 18.3661 11.9461 17.6418 11.3497L6.63564 2.28753Z" fill="red"/></svg>#cursor'), auto;
+}
+
+
 
 /*Navegador inicio*/
 nav {
@@ -140,3 +147,10 @@ button {
   button:active {
     transform: scale(0.9);
   }
+
+  /*Footer*/
+
+  .footer {
+    text-align: center;
+    margin-bottom: 20px;
+}
