@@ -2,7 +2,7 @@
 
 ## 🚀 Description
 Vinatge Cars is a ficticional car shop UI to practise grid and flexbox.
----
+
 
 
 ## 💡 Stack
