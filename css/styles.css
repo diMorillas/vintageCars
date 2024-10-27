@@ -140,6 +140,38 @@ nav a:hover {
 
 }
 
+@media (max-width: 768px) {
+    .banner {
+        height: 110vh; 
+        filter: grayscale(90%); 
+        background-position: center;
+        margin-bottom: 0;
+    }
+
+    .tituloInicio{
+        display: none;
+    }
+
+    nav {
+        padding: 5px;
+        background-color: #333;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        padding: 5px 0;
+    }
+    button {
+            position: absolute;
+            top: 900px;
+            left: 50%; 
+            transform: translate(-150%,750%); 
+        }
+
+}
+
 /*Inicio*/
 
 .tituloInicio {
