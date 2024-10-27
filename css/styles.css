@@ -36,6 +36,11 @@ body {
     cursor: url('data:image/svg+xml;utf8,<svg width="20" height="20" viewBox="0 0 20 20" fill="red" xmlns="http://www.w3.org/2000/svg"><path d="M6.63564 2.28753C5.98325 1.75037 5 2.21445 5 3.05952V17.0583C5 17.9844 6.15025 18.413 6.75622 17.7127L10.2799 13.6402C10.5648 13.3109 10.9788 13.1217 11.4142 13.1217L17.0061 13.1217C17.9444 13.1217 18.3661 11.9461 17.6418 11.3497L6.63564 2.28753Z" fill="red"/></svg>#cursor'), auto;
 }
 
+/*Auxiliar*/
+
+.bg-color{
+    background-color: #f9f9f9;
+}
 
 
 /*Navegador inicio*/
@@ -356,4 +361,67 @@ body {
 .footer {
     text-align: center;
     margin-bottom: 20px;
+}
+
+
+/*Sobre Nosotros*/
+
+.sobre-nosotros {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    margin-bottom: 20px;
+    gap: 20px; 
+}
+
+.item.reverso {
+    grid-template-columns: 1fr 1fr; 
+}
+
+.imagen {
+    width: 100%; 
+    height: auto;
+    border-radius: 5px;
+}
+
+.imagen-mision {
+    width: 100%; 
+    height: auto;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+
+.texto {
+    padding: 20px;
+}
+
+.texto-completo {
+    text-align: center;
+    position: relative;
+}
+
+.imagen-completa {
+    position: relative;
+}
+
+.imagen-completa img {
+    width: 100%;
+    height: auto;
+}
+
+.texto-completo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
