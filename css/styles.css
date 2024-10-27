@@ -70,6 +70,10 @@ nav a:hover {
     color: #ff6b6b;
 }
 
+nav a.active{
+    color: #ff6b6b;
+}
+
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
