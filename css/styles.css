@@ -354,15 +354,109 @@ body {
     display: inline-block;
 }
 
+/*Ficha Coche*/
 
+.carta-coche {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
 
-/*Footer*/
+.imagen-coche {
+    width: 100%;
+    height: auto;
+}
 
-.footer {
+.contenido-carta {
+    padding: 20px;
     text-align: center;
+}
+
+.titulo-coche {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.precio-coche {
+    font-size: 20px;
+    font-weight: bold;
+    color: crimson;
     margin-bottom: 20px;
 }
 
+.detalles-coche {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.detalles-coche div {
+    padding: 8px;
+    background-color: #e8e8e8;
+    border-radius: 5px;
+}
+
+.boton-comprar {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 460px;
+    margin-left: 240px;
+}
+
+.boton-comprar:hover {
+    background-color: #45a049;
+}
+
+
+@media (max-width: 1024px) {
+    .carta-coche {
+        padding-bottom: 30px;
+    }
+
+    .contenido-carta {
+        text-align: left;
+    }
+
+    .boton-comprar {
+        margin: 0;
+        margin-top: 470px;
+        margin-left: -30px;
+    }
+
+    @media (max-width: 768px) {
+        .carta-coche {
+            padding-bottom: 30px;
+        }
+
+        .contenido-carta {
+            text-align: left;
+        }
+
+        .boton-comprar {
+            margin: 0;
+            margin-top: 450px;
+            margin-left: -120px;
+        }
+    }
+}
+/*Sobre nosotros*/
 
 .sobre-nosotros {
     padding: 20px;
@@ -425,4 +519,11 @@ body {
     .item.reverso {
         grid-template-columns: 1fr; 
     }
+}
+
+/*Footer*/
+
+.footer {
+    text-align: center;
+    margin-bottom: 20px;
 }
