@@ -107,6 +107,38 @@ nav a:hover {
 
 }
 
+@media (max-width: 1024px) {
+    .banner {
+        height: 110vh; 
+        filter: grayscale(50%); 
+        background-position: center;
+        margin-bottom: 0;
+    }
+
+    .tituloInicio{
+        text-align: right !important;
+        font-size: 24px !important;
+    }
+
+    nav {
+        padding: 15px;
+        background-color: #333;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        padding: 15px 0;
+    }
+    button {
+        position: absolute;
+        top: 600px;
+        left: 50%; 
+        transform: translateX(-130%); 
+    }
+
+}
 
 /*Inicio*/
 
