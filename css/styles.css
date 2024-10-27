@@ -364,9 +364,7 @@ body {
 }
 
 
-/*Sobre Nosotros*/
-
-.sobre-nosotros {
+/.sobre-nosotros {
     padding: 20px;
     background-color: #f9f9f9;
 }
@@ -384,22 +382,15 @@ body {
 }
 
 .item.reverso {
+    display: grid; 
     grid-template-columns: 1fr 1fr; 
 }
 
-.imagen {
+.imagen-mision, .imagen {
     width: 100%; 
     height: auto;
     border-radius: 5px;
 }
-
-.imagen-mision {
-    width: 100%; 
-    height: auto;
-    margin-top: 30px;
-    border-radius: 5px;
-}
-
 
 .texto {
     padding: 20px;
@@ -424,4 +415,14 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1024px) {
+    .item {
+        grid-template-columns: 1fr; 
+    }
+
+    .item.reverso {
+        grid-template-columns: 1fr; 
+    }
 }
