@@ -7,6 +7,7 @@
     <title>Le Noir Classic Cars</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="icon" href="./images/sections/logo.png" type="image/x-icon">
+    <script src="./js/main.js"></script>
 </head>
 
 <body>
@@ -24,17 +25,17 @@
     <!--Fin Navegador-->
 
     <!-- Buscador -->
-     <br>
-     <h2 style="text-align: center;">Buscador de coches:</h2>
+    <br>
+    <h2 style="text-align: center;">Buscador de coches:</h2>
     <div class="contenedor-buscador">
-        <input type="text" class="input-buscar" placeholder="Buscar coche...">
+        <input type="text" class="input-buscar" id="searchInput" placeholder="Buscar coche...">
     </div>
     <!-- Fin Buscador -->
 
     <!-- Contenedor de cartas de coches -->
-    <div class="card-container">
-        <!--Carta coches-->
-        <div class="card">
+    <div class="card-container" id="carList">
+        <!-- Carta coches -->
+        <div class="card" data-title="BMW Z8">
             <div>
                 <a href="./fichaCoches/Z8.html" target="_blank"><img src="./images/cars/Bmw/BMW_Z8-2000.png" alt="BMW"></a>
             </div>
@@ -49,10 +50,10 @@
                 </div>
             </div>
         </div>
-        <!--Carta coches-->
+        <!-- Carta coches -->
 
-        <!--Carta coches-->
-        <div class="card">
+        <!-- Carta coches -->
+        <div class="card" data-title="BMW 850Ci">
             <div>
                 <a href="./fichaCoches/850Ci.html" target="_blank"><img src="./images/cars/Bmw/BMW_850Ci-1999.png" alt="BMW"></a>
             </div>
@@ -67,28 +68,28 @@
                 </div>
             </div>
         </div>
-        <!--Carta coches-->
+        <!-- Carta coches -->
 
-                <!--Carta coches-->
-                <div class="card">
-                    <div>
-                        <a href="./fichaCoches/750iL.html" target="_blank"><img src="./images/cars/Bmw/BMW_750iL_E32-1994.png" alt="BMW"></a>
-                    </div>
-                    <div class="card-content">
-                        <p class="car-title">BMW 750iL E32</p>
-                        <p class="price">9.800 €</p>
-                        <div class="info">
-                            <span>Barcelona</span>
-                            <span>| Gasolina</span>
-                            <span>| 1994 </span>
-                            <span>| 77.000 km</span>
-                        </div>
-                    </div>
+        <!-- Carta coches -->
+        <div class="card" data-title="BMW 750iL E32">
+            <div>
+                <a href="./fichaCoches/750iL.html" target="_blank"><img src="./images/cars/Bmw/BMW_750iL_E32-1994.png" alt="BMW"></a>
+            </div>
+            <div class="card-content">
+                <p class="car-title">BMW 750iL E32</p>
+                <p class="price">9.800 €</p>
+                <div class="info">
+                    <span>Barcelona</span>
+                    <span>| Gasolina</span>
+                    <span>| 1994 </span>
+                    <span>| 77.000 km</span>
                 </div>
-                <!--Carta coches-->
+            </div>
+        </div>
+        <!-- Carta coches -->
 
-                        <!--Carta coches-->
-        <div class="card">
+        <!-- Carta coches -->
+        <div class="card" data-title="Audi S8">
             <div>
                 <a href="./fichaCoches/s8.html" target="_blank"><img src="./images/cars/Audi/Audi-S8_1996.png" alt="Audi"></a>
             </div>
@@ -103,27 +104,28 @@
                 </div>
             </div>
         </div>
-        <!--Carta coches-->
+        <!-- Carta coches -->
 
-                <!--Carta coches-->
-                <div class="card">
-                    <div>
-                        <a href="./fichaCoches/v8.html" target="_blank"><img src="./images/cars/Audi/Audi_V8-1988.png" alt="Audi"></a>
-                    </div>
-                    <div class="card-content">
-                        <p class="car-title">Audi V8</p>
-                        <p class="price">33.990 €</p>
-                        <div class="info">
-                            <span>Barcelona</span>
-                            <span>| Gasolina</span>
-                            <span>| 1988</span>
-                            <span>| 196.000 km</span>
-                        </div>
-                    </div>
+        <!-- Carta coches -->
+        <div class="card" data-title="Audi V8">
+            <div>
+                <a href="./fichaCoches/v8.html" target="_blank"><img src="./images/cars/Audi/Audi_V8-1988.png" alt="Audi"></a>
+            </div>
+            <div class="card-content">
+                <p class="car-title">Audi V8</p>
+                <p class="price">33.990 €</p>
+                <div class="info">
+                    <span>Barcelona</span>
+                    <span>| Gasolina</span>
+                    <span>| 1988</span>
+                    <span>| 196.000 km</span>
                 </div>
-                <!--Carta coches-->
-                        <!--Carta coches-->
-        <div class="card">
+            </div>
+        </div>
+        <!-- Carta coches -->
+
+        <!-- Carta coches -->
+        <div class="card" data-title="Audi R8">
             <div>
                 <a href="./fichaCoches/r8.html" target="_blank"><img src="./images/cars/Audi/R8-2006.png" alt="Audi"></a>
             </div>
@@ -138,26 +140,28 @@
                 </div>
             </div>
         </div>
-        <!--Carta coches-->
-                <!--Carta coches-->
-                <div class="card">
-                    <div>
-                        <a href="./fichaCoches/928.html" target="_blank"><img src="./images/cars/Porsche/928 _S4_1987-1995.png" alt="Porsche"></a>
-                    </div>
-                    <div class="card-content">
-                        <p class="car-title">Porsche 928 S4</p>
-                        <p class="price">54.990 €</p>
-                        <div class="info">
-                            <span>Barcelona</span>
-                            <span>| Gasolina</span>
-                            <span>| 1989</span>
-                            <span>| 311.000 km</span>
-                        </div>
-                    </div>
+        <!-- Carta coches -->
+
+        <!-- Carta coches -->
+        <div class="card" data-title="Porsche 928 S4">
+            <div>
+                <a href="./fichaCoches/928.html" target="_blank"><img src="./images/cars/Porsche/928 _S4_1987-1995.png" alt="Porsche"></a>
+            </div>
+            <div class="card-content">
+                <p class="car-title">Porsche 928 S4</p>
+                <p class="price">54.990 €</p>
+                <div class="info">
+                    <span>Barcelona</span>
+                    <span>| Gasolina</span>
+                    <span>| 1989</span>
+                    <span>| 311.000 km</span>
                 </div>
-                <!--Carta coches-->
-                        <!--Carta coches-->
-        <div class="card">
+            </div>
+        </div>
+        <!-- Carta coches -->
+
+        <!-- Carta coches -->
+        <div class="card" data-title="Porsche Boxster">
             <div>
                 <a href="./fichaCoches/boxster.html" target="_blank"><img src="./images/cars/Porsche/Boxster_2003.png" alt="Porsche"></a>
             </div>
@@ -172,31 +176,31 @@
                 </div>
             </div>
         </div>
-        <!--Carta coches-->
-                <!--Carta coches-->
-                <div class="card">
-                    <div>
-                        <a href="./fichaCoches/carrera.html" target="_blank"><img src="./images/cars/Porsche/Carrera_84-89.png" alt="Porsche"></a>
-                    </div>
-                    <div class="card-content">
-                        <p class="car-title">Porsche Carrera</p>
-                        <p class="price">14.990 €</p>
-                        <div class="info">
-                            <span>Barcelona</span>
-                            <span>| Gasolina</span>
-                            <span>| 1988</span>
-                            <span>| 109.000 km</span>
-                        </div>
-                    </div>
+        <!-- Carta coches -->
+
+        <!-- Carta coches -->
+        <div class="card" data-title="Porsche Carrera">
+            <div>
+                <a href="./fichaCoches/carrera.html" target="_blank"><img src="./images/cars/Porsche/Carrera_84-89.png" alt="Porsche"></a>
+            </div>
+            <div class="card-content">
+                <p class="car-title">Porsche Carrera</p>
+                <p class="price">14.990 €</p>
+                <div class="info">
+                    <span>Barcelona</span>
+                    <span>| Gasolina</span>
+                    <span>| 1988</span>
+                    <span>| 109.000 km</span>
                 </div>
-                <!--Carta coches-->
+            </div>
+        </div>
+        <!-- Carta coches -->
     </div>
     <!-- Fin del contenedor de cartas -->
     <br>
     <footer>
         <p class="footer">Didac Morillas | Le Noir Classic Cars S.L | Carrer de la vida 13, 08877 Barelona | lenoir@car.es  </p>
     </footer>
-    <br>
 </body>
 
 </html>
