@@ -259,8 +259,8 @@ button:active {
     transform: scale(0.9);
 }
 
-@media (mix-width: 768px) {
-    button{
+@media (max-width: 768px) {
+    .botonInicio{
         display: none;
     }
 }
