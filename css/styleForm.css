@@ -169,6 +169,12 @@ nav a:hover {
     background-color: #45a049;
 }
 
+@media (max-width: 468px){
+    .formulario-coche{
+        padding-bottom: 300px;
+    }
+}
+
 /*Footer*/
 
 .footer {

@@ -231,7 +231,7 @@ button {
     touch-action: manipulation;
     white-space: nowrap;
     cursor: pointer;
-    transition: all 0.3s;
+
     position: absolute;
     top: 250px;
     left: 650px;
@@ -257,6 +257,12 @@ button:hover span {
 
 button:active {
     transform: scale(0.9);
+}
+
+@media (mix-width: 768px) {
+    button{
+        display: none;
+    }
 }
 
 /*Buscador*/
